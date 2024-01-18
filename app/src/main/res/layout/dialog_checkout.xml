@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Address Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/addressLine1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address Line 1"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/addressLine2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address Line 2"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/stateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="State"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/countryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/pincodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pincode"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Card Details Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Details"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/cardHolderNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Holder Name"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/expiryMonthEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="MM"
+            android:inputType="number"
+            android:layout_marginRight="8dp"/>
+
+        <EditText
+            android:id="@+id/expiryYearEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="YY"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/cvvEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="CVV"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+</LinearLayout>
